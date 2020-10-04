@@ -227,7 +227,7 @@ export class QueryCache {
     options?: QueryPredicateOptions
   ): void {
     this.getQueries(predicate, options).forEach(query => {
-      query.cancel()
+      query.cancel(true)
     })
   }
 
